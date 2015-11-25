@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12495,6 +12495,7 @@ Series DC/DC Converter</description>
 <part name="C14" library="adafruit" deviceset="C-US" device="C0805" value="10uF/25V"/>
 <part name="JP_SIGIN" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 <part name="U$6" library="Andrews" deviceset="HEADER-2X8-RIBBON" device=""/>
+<part name="JP_15VIN1" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12578,6 +12579,7 @@ Series DC/DC Converter</description>
 <instance part="C14" gate="G$1" x="377.444" y="29.464" rot="R90"/>
 <instance part="JP_SIGIN" gate="G$1" x="60.96" y="40.64" rot="R90"/>
 <instance part="U$6" gate="G$1" x="104.14" y="-58.42" rot="R90"/>
+<instance part="JP_15VIN1" gate="G$1" x="-7.62" y="-35.56" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12703,6 +12705,11 @@ Series DC/DC Converter</description>
 <wire x1="-27.94" y1="-50.8" x2="-30.48" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-50.8" x2="-30.48" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-50.8"/>
+<pinref part="JP_15VIN1" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-38.1" x2="-12.7" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-38.1" x2="-12.7" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-53.34" x2="-27.94" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-53.34" x2="-27.94" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12815,6 +12822,10 @@ Series DC/DC Converter</description>
 <wire x1="-20.32" y1="-50.8" x2="-17.78" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-50.8" x2="-17.78" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-50.8"/>
+<pinref part="JP_15VIN1" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="-38.1" x2="-7.62" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-48.26" x2="-20.32" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-48.26" x2="-20.32" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="+15V" pin="+15V"/>
