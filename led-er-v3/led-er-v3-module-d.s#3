@@ -10076,14 +10076,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="14" y1="-4" x2="14" y2="4" width="0.127" layer="21"/>
 <wire x1="14" y1="4" x2="-14" y2="4" width="0.127" layer="21"/>
 <wire x1="-14" y1="4" x2="-14" y2="-4" width="0.127" layer="21"/>
-<text x="-8.89" y="3.175" size="0.4064" layer="21" align="bottom-center">1</text>
-<text x="-8.89" y="-3.4925" size="0.4064" layer="21" align="bottom-center">2</text>
-<text x="1.27" y="3.175" size="0.4064" layer="21" align="bottom-center">9</text>
-<text x="1.27" y="-3.4925" size="0.4064" layer="21" align="bottom-center">10</text>
-<text x="-3.81" y="3.175" size="0.4064" layer="21" align="bottom-center">5</text>
-<text x="-3.81" y="-3.4925" size="0.4064" layer="21" align="bottom-center">6</text>
-<text x="6.35" y="3.175" size="0.4064" layer="21" align="bottom-center">13</text>
-<text x="6.35" y="-3.4925" size="0.4064" layer="21" align="bottom-center">14</text>
+<text x="-8.89" y="-3.4925" size="0.4064" layer="21" align="bottom-center">1</text>
+<text x="-8.89" y="3.175" size="0.4064" layer="21" align="bottom-center">2</text>
+<text x="1.27" y="-3.4925" size="0.4064" layer="21" align="bottom-center">9</text>
+<text x="1.27" y="3.175" size="0.4064" layer="21" align="bottom-center">10</text>
+<text x="-3.81" y="-3.4925" size="0.4064" layer="21" align="bottom-center">5</text>
+<text x="-3.81" y="3.175" size="0.4064" layer="21" align="bottom-center">6</text>
+<text x="6.35" y="-3.4925" size="0.4064" layer="21" align="bottom-center">13</text>
+<text x="6.35" y="3.175" size="0.4064" layer="21" align="bottom-center">14</text>
 </package>
 </packages>
 <symbols>
@@ -10334,7 +10334,7 @@ Series DC/DC Converter</description>
 <instance part="TLC1" gate="G$2" x="71.12" y="86.36"/>
 <instance part="+5V" gate="+5V" x="99.06" y="106.68"/>
 <instance part="GND6" gate="1" x="66.04" y="83.82"/>
-<instance part="+15V" gate="+15V" x="68.58" y="-12.7" rot="R180"/>
+<instance part="+15V" gate="+15V" x="52.832" y="18.796"/>
 <instance part="C5" gate="G$1" x="93.98" y="86.36" rot="MR90"/>
 <instance part="U$6" gate="G$1" x="68.58" y="5.08" rot="R270"/>
 <instance part="R6" gate="G$1" x="35.56" y="73.66" rot="R90"/>
@@ -10395,14 +10395,6 @@ Series DC/DC Converter</description>
 <wire x1="45.72" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
 <junction x="45.72" y="66.04"/>
-</segment>
-</net>
-<net name="+15V" class="0">
-<segment>
-<pinref part="+15V" gate="+15V" pin="+15V"/>
-<wire x1="68.58" y1="-10.16" x2="76.2" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-10.16" x2="71.12" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-10.16" x2="60.96" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="2SCKO" class="0">
@@ -10576,6 +10568,30 @@ Series DC/DC Converter</description>
 <wire x1="83.82" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <junction x="99.06" y="71.12"/>
+</segment>
+</net>
+<net name="+15V" class="0">
+<segment>
+<pinref part="+15V" gate="+15V" pin="+15V"/>
+<wire x1="52.832" y1="16.256" x2="52.832" y2="10.668" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P16"/>
+<wire x1="52.832" y1="10.668" x2="60.96" y2="10.668" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.668" x2="60.96" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.668" x2="65.532" y2="10.668" width="0.1524" layer="91"/>
+<wire x1="65.532" y1="10.668" x2="66.04" y2="10.668" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="10.668" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<junction x="60.96" y="10.668"/>
+<pinref part="U$6" gate="G$1" pin="P8"/>
+<wire x1="66.04" y1="10.16" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="10.16" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P4"/>
+<wire x1="71.12" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="10.16" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<junction x="71.12" y="10.16"/>
+<pinref part="U$6" gate="G$1" pin="P12"/>
+<wire x1="66.04" y1="7.62" x2="65.532" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="65.532" y1="7.62" x2="65.532" y2="10.668" width="0.1524" layer="91"/>
+<junction x="65.532" y="10.668"/>
 </segment>
 </net>
 </nets>

@@ -10334,7 +10334,7 @@ Series DC/DC Converter</description>
 <instance part="TLC1" gate="G$2" x="71.12" y="86.36"/>
 <instance part="+5V" gate="+5V" x="99.06" y="106.68"/>
 <instance part="GND6" gate="1" x="66.04" y="83.82"/>
-<instance part="+15V" gate="+15V" x="68.58" y="-12.7" rot="R180"/>
+<instance part="+15V" gate="+15V" x="52.832" y="18.796"/>
 <instance part="C5" gate="G$1" x="93.98" y="86.36" rot="MR90"/>
 <instance part="U$6" gate="G$1" x="68.58" y="5.08" rot="R270"/>
 <instance part="R6" gate="G$1" x="35.56" y="73.66" rot="R90"/>
@@ -10395,14 +10395,6 @@ Series DC/DC Converter</description>
 <wire x1="45.72" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
 <junction x="45.72" y="66.04"/>
-</segment>
-</net>
-<net name="+15V" class="0">
-<segment>
-<pinref part="+15V" gate="+15V" pin="+15V"/>
-<wire x1="68.58" y1="-10.16" x2="76.2" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-10.16" x2="71.12" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-10.16" x2="60.96" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="2SCKO" class="0">
@@ -10481,9 +10473,13 @@ Series DC/DC Converter</description>
 <pinref part="TLC1" gate="G$1" pin="OUTR0"/>
 <wire x1="53.34" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="55.88" x2="40.64" y2="25.908" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P8"/>
 <wire x1="40.64" y1="25.908" x2="71.12" y2="25.908" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="25.908" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="25.908" x2="71.12" y2="24.384" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="24.384" x2="69.85" y2="24.384" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="24.384" x2="69.85" y2="-1.524" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P7"/>
+<wire x1="69.85" y1="-1.524" x2="71.12" y2="-1.524" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-1.524" x2="71.12" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B2" class="0">
@@ -10523,9 +10519,11 @@ Series DC/DC Converter</description>
 <pinref part="TLC1" gate="G$1" pin="OUTR3"/>
 <wire x1="83.82" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="50.8" x2="93.98" y2="16.764" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P12"/>
-<wire x1="93.98" y1="16.764" x2="66.04" y2="16.764" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="16.764" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="16.764" x2="64.77" y2="16.764" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="16.764" x2="64.77" y2="-2.032" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="-2.032" x2="66.04" y2="-2.032" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-2.032" x2="66.04" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P11"/>
 </segment>
 </net>
 <net name="G2" class="0">
@@ -10545,9 +10543,11 @@ Series DC/DC Converter</description>
 <pinref part="TLC1" gate="G$1" pin="OUTR2"/>
 <wire x1="83.82" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="40.64" x2="86.36" y2="21.59" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P16"/>
-<wire x1="86.36" y1="21.59" x2="60.96" y2="21.59" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="21.59" x2="60.96" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="21.59" x2="59.182" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="59.182" y1="21.59" x2="59.182" y2="-2.032" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P15"/>
+<wire x1="59.182" y1="-2.032" x2="60.96" y2="-2.032" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-2.032" x2="60.96" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10568,6 +10568,27 @@ Series DC/DC Converter</description>
 <wire x1="83.82" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <junction x="99.06" y="71.12"/>
+</segment>
+</net>
+<net name="+15V" class="0">
+<segment>
+<pinref part="+15V" gate="+15V" pin="+15V"/>
+<wire x1="52.832" y1="16.256" x2="52.832" y2="10.668" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P16"/>
+<wire x1="52.832" y1="10.668" x2="60.96" y2="10.668" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.668" x2="60.96" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.668" x2="66.04" y2="10.668" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="10.668" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<junction x="60.96" y="10.668"/>
+<pinref part="U$6" gate="G$1" pin="P8"/>
+<wire x1="66.04" y1="10.16" x2="66.04" y2="7.366" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="10.16" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="10.16" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<junction x="66.04" y="10.16"/>
+<pinref part="U$6" gate="G$1" pin="P4"/>
+<wire x1="71.12" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="10.16" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<junction x="71.12" y="10.16"/>
 </segment>
 </net>
 </nets>
